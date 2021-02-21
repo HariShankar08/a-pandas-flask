@@ -12,4 +12,4 @@ Knowledge of HTML forms goes a long way, since they are a crucial part to pretty
 Note that the code is written not following the "standard" way of dealing with forms, which is through the flask extension
 package Flask-WTF, and doing this would require the programmer to write out form validation code himself.
 
-Flask is helpful for small websites and REST APIs, but can be a little bloated for largw projects.
+Flask is helpful for small websites and REST APIs, but can be a little bloated for large projects.
