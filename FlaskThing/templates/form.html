@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block title %}
+<title>Form</title>
+{% endblock %}
+{% block content %}
+    <div class="cover-container d-flex h-100 w-100 p-3 mx-auto flex-column">
+    <main class="px-3 fw-bold text-white text-center">
+        <h1>Form Page</h1>
+        <form action="/process" method="post">
+            <div class="form-group text-center">
+                <label for="name" aria-describedby="name" style="font-size:28px">Name</label>
+                <input type="text" class="form-control" name="name" id="name" placeholder="Name" required>
+                <small for="name" aria-describedby="name">This is a required field</small>
+            </div><br>
+            <div class="form-group text-center">
+                <label for="class" aria-describedby="class" style="font-size:28px">Class</label>
+                <input type="number" class="form-control" name="class" id="class" placeholder="Class" required>
+            </div><br>
+            <div class="form-group text-center">
+                <label for="section" aria-describedby="section" style="font-size:28px">Section</label>
+                <input type="text" class="form-control" name="section" id="section" placeholder="Section" required>
+                <small for="section" aria-describedby="section">This is a required field</small>
+            </div><br>
+            <button type="submit" class="btn btn-lg btn-secondary fw-bold">Submit</button>
+        </form>
+    </main>
+    </div>
+{% endblock %}

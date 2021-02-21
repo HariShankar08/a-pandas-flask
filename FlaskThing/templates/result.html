@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block title %}
+<title>Result</title>
+{% endblock %}
+{% block content %}
+    <div class="cover-container d-flex h-100 w-100 p-3 mx-auto flex-column">
+    <main class="px-3 fw-bold text-white text-center">
+        <h1>Result</h1>
+        <p class="lead">Result from the form:</p>
+        {% for thing in data %}
+            <p class="lead fw-bold">{{ thing.title() }}: {{ data[thing] }}</p>
+        {% endfor %}
+    <p class="lead">
+            <a class="btn btn-lg btn-secondary fw-bold" href="/">Back Home</a>
+    </p>
+    </main>
+    </div>
+{% endblock %}
