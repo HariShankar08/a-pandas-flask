@@ -1,3 +1,9 @@
+'''app.py: A quick flask app to demonstrate the basics of Flask
+
+Flask requires knowledge of HTML and Jinja2 templating. The website created also uses Bootstrap,
+but that's just to make the front end pretty. If only for REST APIs, then this is not too important. 
+'''
+
 from flask import Flask, render_template, request, jsonify
 
 app = Flask(__name__)
